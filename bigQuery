@@ -1,0 +1,135 @@
+GOOGLE BIGQUERY DEMO in CENSUS BUREAU INTERNATIONAL of MORTALITY-LIFE EXPECTANCY
+
+QUERY 1: Infant mortality of Slovenia
+SELECT distinct(year),infant_mortality
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Slovenia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 1:
+1991- Infant mortality of Slovenia is 8.12
+1992- Infant mortality of Slovenia is 8.52
+1993- Infant mortality of Slovenia is 6.74
+1994- Infant mortality of Slovenia is 6.42
+1995- Infant mortality of Slovenia is 5.46
+
+QUERY 2: Male infant mortality of Slovenia
+SELECT distinct(year),infant_mortality_male
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Slovenia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 2:
+Row	year	infant_mortality_male	
+1	1991	10.38	
+2	1992	9.14	
+3	1993	7.99	
+4	1994	6.08	
+5	1995	5.9	
+			
+QUERY 3: Female infant mortality of Slovenia
+SELECT distinct(year),infant_mortality_female
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Slovenia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 3:
+1991- Female infant mortality of Slovenia is 5.71
+1992- Female infant mortality of Slovenia is 7.85
+1993- Female infant mortality of Slovenia is 5.41
+1994- Female infant mortality of Slovenia is 6.77
+1995- Female infant mortality of Slovenia is 5.0
+
+QUERY 4: Life expectancy of Slovenia
+SELECT distinct(year),life_expectancy
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Slovenia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 4:
+1991- Life expectancy of Slovenia is 73.27
+1992- Life expectancy of Slovenia is 73.43
+1993- Life expectancy of Slovenia is 73.35
+1994- Life expectancy of Slovenia is 73.85
+1995- Life expectancy of Slovenia is 74.51
+
+QUERY 5: Mortality rate under 5 in Slovenia
+SELECT distinct(year),mortality_rate_under5
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Slovenia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 5:
+1991- Mortality rate under 5 of Slovenia is 9.64
+1992- Mortality rate under 5 of Slovenia is 10.02
+1993- Mortality rate under 5 of Slovenia is 8.18
+1994- Mortality rate under 5 of Slovenia is 7.99
+1995- Mortality rate under 5 of Slovenia is 6.59
+
+QUERY 6: Infant mortality of Latvia
+SELECT distinct(year),infant_mortality
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Latvia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 6:
+1989- Infant mortality of Latvia is 14.36
+1990- Infant mortality of Latvia is 17.29
+1991- Infant mortality of Latvia is 16.15
+1992- Infant mortality of Latvia is 19.09
+1993- Infant mortality of Latvia is 15.05
+
+QUERY 7: Male infant mortality of Latvia
+SELECT distinct(year),infant_mortality_male
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Latvia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 7:
+Row	year	infant_mortality_male	
+1	1989	16.75	
+2	1990	19.93	
+3	1991	18.47	
+4	1992	21.18	
+5	1993	16.64	
+
+QUERY 8: Female infant mortality of Latvia
+SELECT distinct(year),infant_mortality_female
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Latvia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 8:
+1989- Female infant mortality of Latvia is 11.81
+1990- Female infant mortality of Latvia is 14.54
+1991- Female infant mortality of Latvia is 13.71
+1992- Female infant mortality of Latvia is 16.88
+1993- Female infant mortality of Latvia is 13.41
+
+QUERY 9: Life expectancy of Latvia
+SELECT distinct(year),life_expectancy
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Latvia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 9:
+Row	year	life_expectancy	
+1	1989	69.9	
+2	1990	69.06	
+3	1991	68.95	
+4	1992	68.19	
+5	1993	66.72	
+
+QUERY 10: Mortality rate under 5 in Latvia
+SELECT distinct(year),mortality_rate_under5
+FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE country_name= "Latvia"
+ORDER BY year asc
+LIMIT 5
+OUTPUT 10:
+Row	year	mortality_rate_under5	
+1	1989	18.02	
+2	1990	21.18	
+3	1991	20.2	
+4	1992	22.84	
+5	1993	19.59	
